@@ -1,0 +1,542 @@
+/* Declaração global */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Body */
+body{
+    background: url(./img/imagemescuro2.png) no-repeat ;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+   
+    
+}
+/* scroll bar */
+::-webkit-scrollbar{
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#00942c ;
+    border-radius: 6px;
+}
+
+::selection{
+    background: #932020;
+    color: #fff;
+  }
+
+/* Header */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 7px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0f0f12;
+    transition: 0.5s;
+    z-index: 1000;
+}
+
+header span{
+    color: #00942c;
+}
+
+header .logo{
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+header .nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li{
+    list-style: none;
+    margin: 10px;
+}
+
+header ul li a{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+header ul li a:hover{
+    background: #00942c;
+    color: #050e2d;
+    box-shadow: 0 0 10px #00942c;
+}
+
+header .action .searchBx{
+    padding: 5px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    border-radius: 5px;
+}
+
+header .action .searchBx i{
+    font-size: 1.4em;
+    margin: 5px;
+    color: #222;
+}
+
+header .action .searchBx input{
+    outline: none;
+    border: none;
+    font-size: 1em;
+    color: #222;
+}
+/* Home banner */
+.banner{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0px 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner .bg{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner .bg .content{
+    width: 50%;
+    height: 100%;
+}
+
+.banner .bg .content h2{
+    font-size: 9mm;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.banner .bg .content p{
+    font-size: 1.4em;
+    color: #dbd9d9;
+    letter-spacing: 1px;
+}
+
+.banner .bg .content a{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px 0;
+    border: 1px solid #00942c;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.banner .bg .content a:hover{
+    background: #00942c;
+    border: none;
+    color: #050e2d;
+    box-shadow: 0 0 10px #00942c;
+}
+
+.banner .bg img{
+    width: 600px;
+    margin-left: 220;
+    
+}
+/* About */
+.about{
+    position: relative;
+
+    width: 100%;
+    min-height: 75vh;
+    padding: 0px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #131414;
+}
+
+.about .contentBx{
+    width: 50%;
+    margin: 20px;
+}
+
+.about .contentBx h2{
+    font-size: 3em;
+    font-weight: 700;
+    color: #fff;
+}
+
+.about .contentBx p{
+    max-width: 600px;
+    text-align: justify;
+    color: #dbd9d9;
+    font-size: 1.4em;
+}
+
+.about .contentBx a{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px 0;
+    border: 1px solid #00942c;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.about .contentBx a:hover{
+    background: #00942c;
+    border: none;
+    color: #050e2d;
+    box-shadow: 0 0 10px #00942c;
+}
+/* Games */
+.games{
+    padding: 0px 100px;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 40px auto;
+}
+
+.games h2{
+    color: #fff;
+    margin: 10px 0;
+}
+
+.games ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.games ul li{
+    list-style: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.games ul li.active{
+    background: #940000;
+    color: #000000;
+    box-shadow: 0 0 10px #940000;
+}
+
+.games .cardBx{
+    width: 100%;
+    min-height: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.games .cardBx .card{
+    width: 280px;
+    border-radius: 10px;
+    margin: 20px 40px;
+    background: #fd6161;
+    overflow: hidden;
+}
+
+.games .cardBx .card img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.games .cardBx .card .content{
+    padding: 10px;
+}
+
+.games .cardBx .card .content h4{
+    color: #000000;
+    margin: 15px 0;
+}
+
+.games .cardBx .card .progress-line{
+    position: relative;
+    height: 10px;
+    width: 100%;
+    background: #e70303;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    transform: scaleX(1);
+}
+
+.games .cardBx .card .progress-line span{
+    position: absolute;
+    height: 100%;
+    width: 80%;
+    border-radius: 10px;
+    background: #940000;
+    box-shadow: 0 0 10px #940000;
+    transform-origin: left;
+}
+
+.games .cardBx .card .info{
+    border-top: 2px solid #fd6161;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.games .cardBx .card .info p{
+    font-size: 1em;
+    color: #000000;
+}
+
+.games .cardBx .card .info p span{
+    color: #000000;
+}
+
+.games .cardBx .card .info a{
+        display: inline-block;
+        padding: 10px 20px;
+        margin: 20px 0;
+        border: 1px solid #940000;
+        text-decoration: none;
+        font-weight: 700;
+        border-radius: 5px;
+        color: #fff;
+        letter-spacing: 1px;
+}
+    
+.games .cardBx .card .info a:hover{
+        background: #940000;
+        border: none;
+        color: #000000;
+        box-shadow: 0 0 10px #940000;
+}
+/* Tournaments */
+.tournaments{
+        padding: 0px 100px;
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #131414;
+}
+
+.tournaments h2{
+    color: #fff;
+    margin: 10px 0px;
+}
+
+.tournaments .boxBx{
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.tournaments .boxBx .box{
+    width: 350px;
+    border-radius: 10px;
+    margin: 20px 40px;
+    background: #222;
+    overflow: hidden;
+}
+
+.tournaments .boxBx .box img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.tournaments .boxBx .box .content{
+    padding: 10px;
+}
+
+.tournaments .boxBx .box .content h4{
+    color: #fff;
+    margin-top: 15px;
+}
+
+.tournaments .boxBx .box .content h4 span{
+    color: #940000;
+}
+
+.tournaments .boxBx .box .content p{
+    text-align: justify;
+    margin-top: 10px;
+    color: #dbd9d9;
+}
+
+.tournaments .boxBx .box .content .btn{
+    display: flex;
+    justify-content: space-between;
+}
+
+.tournaments .boxBx .box .content .btn .watch{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px 0;
+    box-shadow: 0 0 10px #940000;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.tournaments .boxBx .box .content .btn .watch:hover{
+    border: 1px solid #940000;
+    background: none;
+    color: #fff;
+    box-shadow: none;
+}
+
+.tournaments .boxBx .box .content .btn .join{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px 0;
+    border: 1px solid #00942c;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.tournaments .boxBx .box .content .btn .join:hover{
+    background: #00942c;
+    border: none;
+    color: #000000;
+    box-shadow: 0 0 10px #00942c;
+}
+/* Contact */
+#contato .container{
+    width: 100%;
+    height: 100vh;
+    background: #09090b;
+}
+
+#contato .container .content-contato{
+    width: 80%;
+    height: 60vh;
+    margin: 0 auto;
+    padding: 200px 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+#contato .container .content-contato .contato-left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+#contato .container .content-contato .contato-left h1{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+#contato .container .content-contato .linha{
+    width: 260px;
+    height: 3px;
+    background: #fff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#contato .container .content-contato .contato-left ion-icon{
+    font-size: 2rem;
+    margin: 20px;
+}
+
+#contato .container .content-contato .contato-left span{
+    font-size: 1.2rem;
+}
+
+#contato .container .content-contato .contato-right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+#contato .container .content-contato .contato-right h1{
+    font-size: 1.5rem;
+    text-transform: uppercase
+}
+
+#contato .container .content-contato .contato-right input[type=email],
+#contato .container .content-contato .contato-right input[type=text]{
+    border-radius: 20px;
+    border: none;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    outline: none;
+}
+
+#contato .container .content-contato .contato-right textarea{
+    width: 100%;
+    height: 120px;
+    border-radius: 20px;
+    border: none;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    outline: none;
+    padding: 15px 20px;
+} 
+/* Footer */
+footer{
+    width: 100%;
+    height: 80px;
+    color: #fff;
+    background: #000000;
+    letter-spacing: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a{
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 700;
+    color: #00942c;
+    letter-spacing: 3px;
+}
